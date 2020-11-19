@@ -1,0 +1,48 @@
+html {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .title {
+        text-align: center;
+        width: 100%; 
+        user-select: none;
+    }
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 35% 0 35%;
+        .score, .record {
+            display: flex;
+            flex-flow: row nowrap;
+            #score, #record{
+                margin-left: 10px;
+            }
+            user-select: none;
+        }
+        .input-field {
+            width: 100px;
+        }
+    }
+    a {
+        width: 100%;
+        margin: 10px 45% 0 45%;
+    }
+    canvas {
+        border: 1px solid #000;
+    }
+}
